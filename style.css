@@ -20,6 +20,9 @@ body {
 .main-container .labs-list {
     margin-top: 3rem;
 }
+.main-container .labs-list li {
+    line-height: 25px;
+}
 .main-container .labs-list a {
     text-decoration: none;
     color: black;
