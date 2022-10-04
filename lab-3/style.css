@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.task-1 {
+    width: 100%;
+    height: 500px;
+}
+.task-1 .blue,
+.task-1 .beige,
+.task-2 .blue,
+.task-2 .beige {
+    height: 50px;
+    line-height: 50px;
+    width: 66.67%;
+}
+.task-1 div,
+.task-2 div {
+    text-align: center;
+}
+.task-1 div {
+    width: 100%;
+}
+.task-1 .blue,
+.task-2 .blue {
+    background-color: rgb(90, 200, 255);
+}
+.task-1 .blue {
+    align-self: flex-end;
+    z-index: 2;
+}
+.task-1 .green,
+.task-2 .green {
+    background-color: rgb(98, 250, 146);
+}
+.task-1 .yellow,
+.task-2 .yellow {
+    background-color: rgb(255, 211, 90);
+}
+.task-1 .pink,
+.task-2 .pink {
+    background-color: rgb(255, 132, 251);
+}
+.task-1 .pink {
+    z-index: 1;
+}
+.task-1 .beige,
+.task-2 .beige {
+    background-color: rgb(255, 197, 163);
+}
+.task-1 .beige {
+    bottom: 0;
+}
+.task-1 .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.task-1 .center-wrapper {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    line-height: 500px;
+}
+.task-2 {
+    margin-top: 100px;
+    height: 500px;
+}
+
+.task-2 .center-wrapper {
+    display: inline;
+    height: 500px;
+}
+.task-2 .center-wrapper > div {
+    display: inline-block;
+}
+.task-2 .green {
+    width: 33.33%;
+    height: 450px;
+    float: left;
+    line-height: 450px;
+}
+.task-2 .yellow {
+    height: 400px;
+    width: 33.33%;
+    float: none;
+    line-height: 400px;
+}
+.task-2 .pink {
+    height: 450px;
+    width: 33.33%;
+    float: right;
+    line-height: 450px;
+}
+.task-2 .beige {
+    vertical-align: bottom;
+    float: left;
+}
+
+.task-2 .blue {
+    vertical-align: top;
+    float: right;
+}
