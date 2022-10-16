@@ -1,6 +1,6 @@
-const element = document.getElementById('eighth');
+const element = document.getElementById('ninth');
 
-const nextElement = document.querySelector('#eighth + li');
+const nextElement = document.querySelector('.hobby + div > h4');
 
 const colors = ['#9f7df6', '#61b7f4', '#fff048', 'transparent'];
 
@@ -24,6 +24,7 @@ document.getElementById('add').onclick = (e) => {
     const imgContainer = document.createElement('div');
     imgContainer.className = 'img-container';
     const imageElem = document.createElement('img');
+    imageElem.style.width = '1000px';
     imageElem.src = IMG_SRC;
     imgContainer.appendChild(imageElem);
     CONTAINER.appendChild(imgContainer);

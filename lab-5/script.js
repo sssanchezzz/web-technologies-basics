@@ -41,7 +41,7 @@ submitButton.addEventListener('click', () => {
     const hasInvalidFields = Object.values(validations).some(
         (value) => value.isValid === null || value.isValid === false
     );
-    console.log(hasInvalidFields);
+
     hasInvalidFields ? hide() : display();
 });
 const hide = () => {
@@ -51,17 +51,13 @@ const hide = () => {
 
 const display = () => {
     const list = document.createElement('ul');
+
     Object.values(validations).forEach((validation) => {
         const elem = document.createElement('li');
         elem.textContent = `${validation.name}: ${validation.value}`;
         list.appendChild(elem);
     });
-    // const res = Array.from(validations).forEach((validation) => {
-    // const elem = document.createElement('li');
-    //     console.log(validation);
-    // elem.textContent = value.value;
-    // list.appendChild(elem);
-    // });
+
     infoSection.style.display = 'block';
 
     infoSection.replaceChildren(list);
